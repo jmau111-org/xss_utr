@@ -104,7 +104,7 @@ I've seen dev teams wrapping **all** WordPress utilities and other dynamic eleme
 
 Be careful with such approach, as you will likely clutter the code, making it way less readable and maintainable, while the security benefits are questionable.
 
-It's easy to miss many occurrences, and, as we saw in the demos, some DOM XSS are more difficult to spot than others.
+It's easy to miss many occurrences, and, as we saw in the demos, some XSS are more difficult to spot than others.
 
 Besides, this one does not fix the problem:
 

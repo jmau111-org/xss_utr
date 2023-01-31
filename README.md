@@ -144,6 +144,10 @@ IMHO, uX is more about helping the users in their experience than producing over
 
 In doubt, use robust and trusted libraries that are actively maintained. Manual whitelists and blacklists are prone to evasion in my experience.
 
+The other major inconvenience with manual checking/sanitization is that it often leads to errors without improving security. Some rules are too strict, requiring at least 2 or 3 chars for a text input (e.g., "Your name") while some last names or surnames are one letter (e.g., "O", "E")!
+
+In such case, it's not safer at all and you potentially harm the experience for some users. 
+
 #### Use a valid CSP
 
 Here's a basic example by PortSwigger:

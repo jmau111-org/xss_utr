@@ -124,8 +124,6 @@ X-XSS-Protection: 1; mode=block
 
 The purpose of this header is to re-enable the XSS-filter if it's disabled by the user. It's now deprecated, and you'd better use a valid [content security policy](https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy) (CSP) instead.
 
-The only edge case where it might still make sense is for very old browsers (legacy).
-
 ### Efficient mitigations
 
 #### Encode data on output

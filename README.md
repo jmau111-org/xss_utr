@@ -136,7 +136,7 @@ In addition to encoding, input validation is critical. The recommended approach 
 
 App creators want to improve the experience and ensure users won't get frustrated by "impossible" forms to fill. Thanks to modern languages, it's possible to raise errors without reloading the page every time, and you can provide more details about the expected formats to your users.
 
-IMHO, uX is more about helping the users in their experience than producing oversimplistic and unsecure processes. If I can create accounts that easily bypass your policy or send unexpected values to store XSS payloads, it's not a good experience for me, especially if you ask me confidential documents once I'm registered.
+IMHO, uX is more about helping the users in their experience than producing oversimplistic and unsecured processes. If I can create accounts that easily bypass your policy or send unexpected values to store XSS payloads, it's not a good experience for me, especially if you ask me confidential documents once I'm registered.
 
 #### How am I supposed to implement that as a developer?
 

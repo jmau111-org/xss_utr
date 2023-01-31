@@ -75,7 +75,7 @@ Scalable Vector Graphics (SVG files) are XML-based documents that can execute Ja
 
 ### PHP
 
-It's a classic one:
+While it's a classic one, it remains quite misknown by beginners:
 
 ```PHP
 <!DOCTYPE html>

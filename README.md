@@ -10,7 +10,7 @@ It's the act of injecting malicious scripts in a seemingly trusted website to se
 
 There's a large range of XSS types and attacks. Here we'll only see those I consider a bit harder to understand/detect.
 
-Even if devs care about security, as you would expect, attackers have other ways to inject crap.
+Even if devs care about security, as you would expect, attackers may find ways to inject crap.
 
 ## Why attackers exploit XSS flaws
 

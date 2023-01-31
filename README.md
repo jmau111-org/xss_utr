@@ -136,7 +136,7 @@ Depending on the context (HTML, JavaScript), you won't apply the same encoding, 
 
 In addition to encoding, input validation is critical. The recommended approach is to **ban/block invalid inputs** and raise an error. It might seem tedious, but many apps try to "make wrong inputs valid" or guess the expected value, which leads to all kinds of abuses.
 
-App creators want to improve the experience and ensure users won't get frustrated by "impossible" forms to fill when they try to register. Thanks to modern languages, it's possible to raise errors without reloading the page every time, and you can provide more details about the expected formats to your users.
+App creators want to improve the experience and ensure users won't get frustrated by "impossible" forms to fill. Thanks to modern languages, it's possible to raise errors without reloading the page every time, and you can provide more details about the expected formats to your users.
 
 IMHO, uX is more about helping the users in their experience than producing oversimplistic and unsecure processes. If I can create accounts that easily bypass your policy or send unexpected values to store XSS payloads, it's not a good experience for me, especially if you ask me confidential documents once I'm registered.
 

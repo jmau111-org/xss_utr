@@ -130,15 +130,33 @@ The only edge case where it might still make sense is for very old browsers (leg
 
 ### Efficient mitigations
 
-* Encode data on output
-* Validate input on arrival
-* Use a CSP:
+#### Encode data on output
+
+Depending on the context (HTML, JavaScript), you won't apply the same encoding, but some values are particularly sensitive, for example, `<` and `>`, and must be encoded before display. Otherwise, you app will be prone to attacks.
+
+#### Validate input on arrival
+
+In addition to encoding, input validation is critical. The recommended approach is to **ban/block invalid inputs** and raise an error. It might seem tedious, but many apps try to "make wrong inputs valid" or guess the expected value, which leads to all kinds of abuses.
+
+App creators want to improve the experience and ensure users won't get frustrated by "impossible" forms to fill when they try to register. Thanks to modern languages, it's possible to raise errors without reloading the page every time, and you can provide more details about the expected formats to your users.
+
+IMHO, uX is more about helping the users in their experience than producing oversimplistic and unsecure processes. If I can create accounts that easily bypass your policy or send unexpected values to store XSS payloads, it's not a good experience for me, especially if you ask me confidential documents once I'm registered.
+
+#### How am I supposed to implement that as a developer?
+
+In doubt, use robust and trusted libraries that are actively maintained. Manual whitelists and blacklists are prone to evasion in my experience.
+
+#### Use a valid CSP
+
+Here's a basic example by PortSwigger:
 
 ```
 default-src 'self'; script-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none';
 ```
 
 [Source: portswigger](https://portswigger.net/web-security/cross-site-scripting/preventing)
+
+However, you will likely have to customize it according to your context. Use testing environments that replicate the real conditions to prevent unwanted display errors, as a strict policy may prevent some resources from loading.
 
 ### Find good payloads
 

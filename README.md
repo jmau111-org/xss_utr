@@ -24,7 +24,7 @@ Here are some goals that can be achieved by exploiting XSS vulnerabilities:
 * install cryptominers or keyloggers
 * harm the targeted website's reputation
 
-The bad news is that XSS can be **stored**, so simply browsing a vulnerable website without interacting can be dangerous.
+The bad news is that XSS can be **stored**, so simply browsing a vulnerable website without interacting with it can still be dangerous.
 
 ## Misknown XSS
 

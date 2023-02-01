@@ -1,5 +1,7 @@
 # XSS Under The Radar
 
+![GitHub last commit](https://img.shields.io/github/last-commit/jmau111-org/xss_utr?label=last%20update%3A)
+
 ## Disclaimer
 
 You won't find any `alert` here. Open the console.
